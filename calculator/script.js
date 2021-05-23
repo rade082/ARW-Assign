@@ -4,18 +4,14 @@ function dis(val){
     display.value += val;
 }
 
-function expo(str){
-    str = str.split('Ex');
-    let s = str[0];
-    let p = str[1]
-    let x = (s*(Math.pow(10,p)))
-    display.value = x;
-}
-
 function solve(){
-    if (display.value.includes('Ex')){
-        let c = display.value;
-        expo(c);
+    let disVal = display.value;
+    if (disVal.includes('Ex')){
+        expo(disVal);
+    }else if (disVal.includes('√')){
+        nRooter(disVal);
+    }else if (disVal.includes('^')){
+        nPower(disVal);
     }
     let x = display.value;
     let y = eval(x);
@@ -58,4 +54,26 @@ function prcnt(){
     let x = display.value;
     let y = (eval(x)/100);
     display.value = y;
+}
+
+function expo(str){
+    str = str.split('Ex');
+    let s = str[0];
+    let p = str[1]
+    let x = (s*(Math.pow(10,p)))
+    display.value = x;
+}
+
+function nRooter(str){
+    str = str.split('√');
+    let m = str[0];
+    let n = str[1];
+    display.value = Math.pow(n,1/m)
+}
+
+function nPower(str){
+    str = str.split('^');
+    let m = str[0];
+    let n = str[1];
+    display.value = Math.pow(m,n);
 }
