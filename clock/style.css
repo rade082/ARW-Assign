@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d2137;
+    overflow: hidden;
+}
+
+.back{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.back button{
+    background-color: #0d2137;
+    border: 2px solid #E0EAF5;
+    color: cornsilk;
+    padding: 3px;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.clock{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  url(./clock.png);
+    background-size: cover;
+    border: 5px solid #E0EAF5;
+    border-radius: 50%;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+
+.clock:before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.clock .hour,
+.clock .minute,
+.clock .second{
+    position: absolute;
+}
+
+.clock .hour .hr{
+    width: 160px;
+    height: 160px;
+}
+
+.clock .minute .min{
+    width: 190px;
+    height: 190px;
+}
+
+.clock .second .sec{
+    width: 230px;
+    height: 230px;
+}
+
+.hr , .min, .sec{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* position: absolute;
+    border-radius: 50%; */
+}
+
+.hr::before
+{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background: #2E77AE;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.min:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.sec:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+.digital_clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size:-webkit-xxx-large;
+    margin-top: 20px;
+    border: 5px solid #0d2137;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+
+.alarm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.alarm h3{
+    color: rgb(221, 221, 221);
+    font-size: x-large;
+}
+.alarm input{
+    background-color: #0d2137;
+    color: cornsilk;
+    margin: 10px 0 5px 0;
+    border: 5px solid #0d2137;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+                
+}
+
+#alarmButton{
+    background-color: #0d2137;
+    border: 2px solid #E0EAF5;
+    color: cornsilk;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+
+#alarmOptions{
+    margin-bottom: 30px;
+}
+.snooze{
+    background-color: #0d2137;
+    border: 2px solid #f1a93b;
+    color: cornsilk;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+
+.stop{
+    background-color: #0d2137;
+    border: 2px solid #ee3a1a;
+    color: cornsilk;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255,255,255,0.05),
+                0 15px 15px rgba(0,0,0,0.03),
+                inset 0 15px 15px rgba(0,0,0,0.03);
+}
+

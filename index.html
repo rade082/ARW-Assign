@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: black;
+            color: burlywood;
+        }
+        .bucket{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 50px;
+        }
+        button{
+            border: 0.2rem solid #fff;
+            border-radius: 2rem;
+            padding: 0.4em;
+            box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #13bbfe,
+              0 0 0.8rem #13bbfe,
+              0 0 2.8rem #13bbfe,
+              inset 0 0 1.3rem #13bbfe; 
+        }
+        /* h1{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        } */
+        span{
+            animation: flicker 1.5s infinite alternate;  
+        }
+
+    @keyframes flicker { 
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            text-shadow:
+            0 0 7px rgb(241, 7, 7),
+            0 0 10px rgb(241, 7, 7),
+            0 0 21px rgb(241, 7, 7),
+            0 0 42px rgb(255, 145, 0),
+            0 0 82px rgb(255, 145, 0),
+            0 0 92px rgb(255, 145, 0),
+            0 0 102px rgb(255, 145, 0),
+            0 0 151px rgb(255, 145, 0);
+        }
+            20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+    }
+  
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="neon"><span>👋</span> Konnichiwa!!  <span>👋</span>  Hello!! <span>👋</span>  Welcome!! <span>👋</span> </h1>
+        <div class="bucket">
+            <a href="./clock/index.html"> <button >Clock</button></a>
+            <a href="./calculator/index.html"><button>Calculator</button></a> 
+            <a href="./resume/index.html"><button>Resume</button></a> 
+        </div>
+    </div>
+</body>
+</html>
