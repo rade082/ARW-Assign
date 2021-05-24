@@ -13,6 +13,7 @@
             min-height: 100vh;
             background-color: black;
             color: burlywood;
+            overflow: hidden;
         }
         .bucket{
             display: flex;
@@ -31,13 +32,9 @@
               0 0 2.8rem #13bbfe,
               inset 0 0 1.3rem #13bbfe; 
         }
-        /* h1{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-        } */
+        
         span{
-            animation: flicker 1.5s infinite alternate;  
+            animation: flicker 1.5s infinite alternate; 
         }
 
     @keyframes flicker { 
@@ -56,12 +53,17 @@
             text-shadow: none;
         }    
     }
+    @media (max-width:830px) {
+        h1{
+            font-size: 1rem; 
+        }
+    }
   
     </style>
 </head>
 <body>
     <div class="main">
-        <h1 class="neon"><span>👋</span> Konnichiwa!!  <span>👋</span>  Hello!! <span>👋</span>  Welcome!! <span>👋</span> </h1>
+        <h1><span>👋</span> Konnichiwa!!  <span>👋</span>  Hello!! <span>👋</span>  Welcome!! <span>👋</span> </h1>
         <div class="bucket">
             <a href="./clock/index.html"> <button >Clock</button></a>
             <a href="./calculator/index.html"><button>Calculator</button></a> 
