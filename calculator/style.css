@@ -38,7 +38,9 @@ body{
     color: white;
     font-weight: 500;
 }
-
+.special{
+    background-color: rgb(223, 44, 12);
+}
 .box_one{
     width: 95%;
     margin-left: 2.3%;
@@ -144,6 +146,7 @@ body{
    border-bottom-left-radius: 3px;
    border-bottom-right-radius: 3px;
 }
+
 
 @media(max-width:830px){
     body{

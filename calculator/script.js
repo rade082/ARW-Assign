@@ -33,6 +33,7 @@ function xn(n){
 }
 
 function trigo(op){
+    console.log(display.value);
     display.value = Math[op](display.value);
 }
 function trigoIn(op){
